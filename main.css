@@ -1,0 +1,76 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+
+button {
+  border-radius: 10px;
+  text-align: center;
+  background: #dfdfdf;
+  font-size: 20px;
+  cursor: pointer; }
+
+.textalign {
+  text-align: center;
+  font-size: 1.5rem; }
+
+#edit {
+  text-align: left; }
+
+.save {
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center; }
+
+#save-file {
+  display: block; }
+
+  #save-file.close {
+    display: none; }
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid silver; }
+
+  table thead {
+    background: #01dddf; }
+    table thead th {
+      text-align: left;
+      padding-left: 20px;
+      border-bottom: 1px solid #fff; }
+
+      table thead th:last-child {
+        text-align: center;
+        color: #df0330; }
+
+      table thead th #inp-head {
+        display: none; }
+
+  table tbody td {
+    border-right: 1px solid #00df01; }
+    
+    table tbody td input {
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      width: 90%; }
+  table tfoot td {
+    font-size: 1.8rem;
+    border: 1px solid black;
+    text-align: right;
+    padding: 10px; }
+
+.tableEl td {
+  border: 1px solid #333;
+  text-align: center; }
+  .tableEl td:first-child {
+    padding: 10px;
+    text-align: left; }

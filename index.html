@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <table id="tab" colspan="4">
+        <thead>
+            <tr id='editHead'>
+                <th colspan="2"><span id="edit" class="textalign">Izolaterski radovi</span>
+                    <input id="inp-head" type="text">
+                </th>
+                <th>
+                    <button class="editbtn">edit</button>
+                </th>
+                <th><i>By Stefan Vuckovic </i>
+                </th>
+            <tr>
+                <th>Opis rada</th>
+                <th>Jedinica mere</th>
+                <th>Cena bez PDV-a u <span>DIn</span>
+
+                </th>
+                <th>Zbir</th>
+        </thead>
+        <tbody id="tab">
+            <tr>
+                <td><input id='inpText' type="text" placeholder="Opis rada"></td>
+                <td><input id='a' type="number " placeholder="Kolicina m2"></td>
+                <td><input id='b' type="number " placeholder="cena u dinarima"></td>
+                <td class="textalign">
+                    <button id="btnCreate">Create</button>
+                </td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    Ukupna cena radova
+                </td>
+                <td id="zbir">cena</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+    <div class="save">
+        <button onclick="saveFile()">press to Save</button>
+        <h5 id="save-file" class="close">Press CRTL + "S" to save file</h5>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
